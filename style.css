@@ -1,59 +1,86 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Base */
 body {
-    background: #f4f4f4;
-    color: #222;
+    background: #0e0e0e;
+    color: #eaeaea;
 }
 
+/* Header */
 header {
+    padding: 2rem 1.5rem;
     text-align: center;
-    padding: 2rem;
-    background: white;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #222;
 }
 
 header h1 {
-    font-size: 2rem;
-    letter-spacing: 1px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 header p {
-    margin: 0.5rem 0 1rem;
-    color: #666;
+    margin-top: 0.5rem;
+    color: #888;
+    font-size: 0.9rem;
 }
 
-.download-btn {
+/* Buttons */
+.actions {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.actions a {
     text-decoration: none;
-    padding: 0.6rem 1.2rem;
-    border: 1px solid #222;
-    color: #222;
-    transition: 0.3s;
+    color: #eaeaea;
+    border: 1px solid #444;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
 }
 
-.download-btn:hover {
-    background: #222;
-    color: white;
+.actions a:hover {
+    background: #eaeaea;
+    color: #0e0e0e;
 }
 
+/* Main PDF viewer */
 main {
-    height: calc(100vh - 200px);
+    height: calc(100vh - 220px);
 }
 
-iframe {
+object {
     width: 100%;
     height: 100%;
     border: none;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 1rem;
-    font-size: 0.8rem;
-    background: white;
-    border-top: 1px solid #ddd;
+    font-size: 0.75rem;
+    color: #555;
+    border-top: 1px solid #222;
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    main {
+        height: calc(100vh - 260px);
+    }
 }
