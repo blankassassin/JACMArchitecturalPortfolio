@@ -2,24 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jose Armando Cortez-Martinez | Architectural Portfolio</title>
+    <title>Your Name | Architectural Portfolio</title>
+
+    <!-- Mobile optimization -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Jose Armando Cortez-Martinez</h1>
+    <h1>Your Name</h1>
     <p>Architectural Portfolio</p>
-    <a href="ARC111_P-8_Portfolio.pdf" download class="download-btn">Download PDF</a>
+
+    <div class="actions">
+        <a href="portfolio.pdf" target="_blank">Open PDF</a>
+        <a href="portfolio.pdf" download>Download</a>
+    </div>
 </header>
 
 <main>
-    <iframe src="portfolio.pdf"></iframe>
+    <!-- Mobile-friendly PDF embed -->
+    <object data="portfolio.pdf" type="application/pdf">
+        <p>
+            Your browser does not support embedded PDFs.<br>
+            <a href="portfolio.pdf">Click here to view the portfolio.</a>
+        </p>
+    </object>
 </main>
 
 <footer>
-    <p>© 2025 Your Name</p>
+    © 2025 Your Name
 </footer>
 
 </body>
