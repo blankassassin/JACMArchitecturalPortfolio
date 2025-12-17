@@ -87,3 +87,12 @@ footer {
         height: calc(100vh - 220px);
     }
 }
+.actions a:last-child {
+    border-color: #555;
+}
+
+.actions a:last-child:hover {
+    background: #0a66c2; /* LinkedIn blue */
+    color: #ffffff;
+    border-color: #0a66c2;
+}
