@@ -1,98 +1,107 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 html, body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 /* Base */
 body {
-    background: #0e0e0e;
-    color: #eaeaea;
+  background: #0e0e0e;
+  color: #eaeaea;
+  line-height: 1.6;
 }
 
 /* Header */
-header {
-    padding: 2rem 1.5rem;
-    text-align: center;
-    border-bottom: 1px solid #222;
+.site-header {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid #222;
 }
 
-header h1 {
-    font-size: 1.8rem;
-    font-weight: 400;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+.site-header h1 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
-header p {
-    margin-top: 0.5rem;
-    color: #888;
-    font-size: 0.9rem;
+.subtitle {
+  margin-top: 0.5rem;
+  color: #888;
+  font-size: 0.9rem;
 }
 
-/* Buttons */
+/* Action buttons */
 .actions {
-    margin-top: 1.5rem;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .actions a {
-    text-decoration: none;
-    color: #eaeaea;
-    border: 1px solid #444;
-    padding: 0.5rem 1.2rem;
-    font-size: 0.85rem;
-    transition: all 0.3s ease;
+  text-decoration: none;
+  color: #eaeaea;
+  border: 1px solid #444;
+  padding: 0.55rem 1.4rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  transition: all 0.25s ease;
 }
 
 .actions a:hover {
-    background: #eaeaea;
-    color: #0e0e0e;
+  background: #eaeaea;
+  color: #0e0e0e;
+}
+
+/* LinkedIn accent */
+.actions a:last-child {
+  border-color: #555;
+}
+
+.actions a:last-child:hover {
+  background: #0a66c2;
+  color: #ffffff;
+  border-color: #0a66c2;
 }
 
 /* Main PDF viewer */
-main {
-    height: calc(100vh - 220px);
+#content {
+  height: calc(100vh - 220px);
 }
 
-object {
-    width: 100%;
-    height: 100%;
-    border: none;
+.pdf-viewer {
+  height: 100%;
+}
+
+.pdf-viewer object {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 /* Footer */
-footer {
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.75rem;
-    color: #555;
-    border-top: 1px solid #222;
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.75rem;
+  color: #555;
+  border-top: 1px solid #222;
 }
 
 /* Mobile tweaks */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 1.4rem;
-    }
+  .site-header h1 {
+    font-size: 1.4rem;
+  }
 
-    main {
-        height: calc(100vh - 220px);
-    }
-}
-.actions a:last-child {
-    border-color: #555;
-}
-
-.actions a:last-child:hover {
-    background: #0a66c2; /* LinkedIn blue */
-    color: #ffffff;
-    border-color: #0a66c2;
+  #content {
+    height: calc(100vh - 240px);
+  }
 }
