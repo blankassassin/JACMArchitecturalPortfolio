@@ -5,6 +5,10 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 /* Base */
 body {
     background: #0e0e0e;
@@ -21,7 +25,7 @@ header {
 header h1 {
     font-size: 1.8rem;
     font-weight: 400;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     text-transform: uppercase;
 }
 
@@ -80,6 +84,6 @@ footer {
     }
 
     main {
-        height: calc(100vh - 260px);
+        height: calc(100vh - 220px);
     }
 }
