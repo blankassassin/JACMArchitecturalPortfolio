@@ -1,41 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Jose Armando Cortez-Martinez | Architectural Portfolio</title>
+  <meta charset="UTF-8" />
+  <title>Jose Armando Cortez-Martinez | Architectural Portfolio</title>
 
-    <!-- Mobile optimization -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Mobile optimization -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css">
+  <!-- SEO -->
+  <meta
+    name="description"
+    content="Architectural portfolio of Jose Armando Cortez-Martinez featuring academic and design work."
+  />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
+  <!-- Header -->
+  <header class="site-header">
     <h1>Jose Armando Cortez-Martinez</h1>
-    <p>Architectural Portfolio</p>
+    <p class="subtitle">Architectural Portfolio</p>
 
     <div class="actions">
-    <a href="ARC111_P-8_Portfolio.pdf" target="_blank">Open PDF</a>
-    <a href="ARC111_P-8_Portfolio.pdf" download>Download</a>
-    <a href="https://www.linkedin.com/in/joseacortez-martinez/" target="_blank" rel="noopener">LinkedIn</a>
-</div>
+      <a href="ARC111_P-8_Portfolio.pdf" target="_blank" rel="noopener">
+        Open PDF
+      </a>
+      <a href="ARC111_P-8_Portfolio.pdf" download>
+        Download
+      </a>
+      <a
+        href="https://www.linkedin.com/in/joseacortez-martinez/"
+        target="_blank"
+        rel="noopener"
+      >
+        LinkedIn
+      </a>
+    </div>
+  </header>
 
-</header>
-
-<main>
-    <!-- Mobile-friendly PDF embed -->
-   <object data="ARC111_P-8_Portfolio.pdf#view=FitH" type="application/pdf">
+  <!-- Main content -->
+  <main id="content">
+    <section class="pdf-viewer">
+      <object
+        data="ARC111_P-8_Portfolio.pdf#view=FitH"
+        type="application/pdf"
+        aria-label="Architectural portfolio PDF"
+      >
         <p>
-            Your browser does not support embedded PDFs.<br>
-            <a href="ARC111_P-8_Portfolio.pdf">Click here to view Jose's portfolio.</a>
+          Your browser does not support embedded PDFs.<br />
+          <a href="ARC111_P-8_Portfolio.pdf">
+            Click here to view the portfolio.
+          </a>
         </p>
-    </object>
-</main>
+      </object>
+    </section>
+  </main>
 
-<footer>
-    © 2025 Jose Armando Cortez-Martinez Architectural Portfolio
-</footer>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© 2025 Jose Armando Cortez-Martinez</p>
+    <p class="footer-subtitle">Architectural Portfolio</p>
+  </footer>
 
 </body>
 </html>
